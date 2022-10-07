@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/metisMenu.min.css">
+    <link rel="stylesheet" href="./assets/css/mm-folder.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>File manager</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .dropdown-toggle::after {
+            display: none !important;
+          
+        }
+
+        #dropright ul{
+           list-style: none;
+           padding: 0 5px;
+           color: #333;
+        }
+        #dropright .fa{
+            color: #333;
+            padding: 10px;
+        }
+        .btn-drop{
+            background-color: inherit;
+         border: none;
+        }
+        .btn-drop:focus{
+            outline: none !important;
+        }
+        #dropright a{
+            text-decoration: none;
+            color: inherit;
+        }
+        #dropright span{
+           padding: 0 10px;
+        }
+        .dropdown-menu{
+            width: 150px;
+            height: 140px;
+        }
+
+    </style>
+  </head>
+  <body>
+    
+      
+
+
+      <div class="row d-flex justify-content-center " id="main"><!--row start-->
+        <div class="col-xl-3 "  id="storage"><!--col-xl-3-->
+            <div class="container ">
+
+                <!--top -->
+                <div class="d-flex circular-head justify-content-start p-2">
+                    <!--circular bar start-->
+                        <div id="circular-bar" class="mt-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 circle">
+                                        <div class="progress blue">
+                                            <span class="progress-left">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <div class="progress-value">100%</div>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>   
+                     <!--cirular bar end-->
+                         <div class="px-4 py-2">
+                            <h4 class="text-center">Storage</h4>
+                            <p>12GB/64GB</p>
+                         </div>
+                 </div>
+                <!--top **-->
+                <!---nav section-->
+                <nav class="nav">
+                    <ul class="metisFolder metismenu">
+                        <li>
+                            <a href="#">
+                            <img src="./assets/img/icons8-folder-48.png" alt="" width="30px" height="auto" class="mx-2">File manager</a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                    <img src="./assets/img/pdf.png" alt="" width="30px" height="auto" class="mx-2">Docs.pdf</a>
+                                </li>
+                                <li><a href="#">
+                                    <img src="./assets/img/icons8-folder-48.png" alt="" width="30px" height="auto" class="mx-2">file.ppt</a>
+                                    <ul>
+                                        <li><a href="#"><img src="./assets/img/file-icon.png" alt="" width="30px" height="auto" class="mx-2">file.pdf</a></li>
+                                        <li><a href="#"><img src="./assets/img/image.png" alt="" width="30px" height="auto" class="mx-2">img.jpg</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">
+                                    <img src="./assets/img/icons8-folder-48.png" alt="" width="30px" height="auto" class="mx-2">New folder</a>
+                                    <ul>
+                                        <li><a href="#"><img src="./assets/img/file-icon.png" alt="" width="30px" height="auto" class="mx-2">file.pdf</a>
+                                        </li>
+                                        <li><a href="#">
+                                            <img src="./assets/img/icons8-folder-48.png" alt="" width="30px" height="auto" class="mx-2">New folder</a>
+                                        <ul>
+                                            <li><a href="#"><img src="./assets/img/image.png" alt="" width="30px" height="auto" class="mx-2">img.jpg</a></li>
+                                        </ul>
+                                    </li>
+                                        <li><a href="#"><img src="./assets/img/image.png" alt="" width="30px" height="auto" class="mx-2">img.jpg</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/icons8-folder-48.png" alt="" width="30px" height="auto" class="mx-2">New folder</a>
+                                        <ul>
+                                            <li><a href="#">
+                                                <img src="./assets/img/music-note.png" alt="" width="30px" height="auto" class="mx-2">Hate.mp3</a></li>
+                                            <li><a href="#"><img src="./assets/img/music-note.png" alt="" width="30px" height="auto" class="mx-2">like.mpe</a></li>
+                                            </ul>
+                                </li>  
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            
+                <!--nav section-->
+                
+              <!--extra controls starts-->
+              <div id="extra px-4">
+               
+                <div class="px-4 py-2"><span><i class="fa-solid fa-circle circle1"></i></span> Remote Control</div>
+                <div class="px-4 py-2"><span><i class="fa-solid fa-circle circle2"></i></span> Google Drive</div>
+                <div class="px-4 py-2"><span><i class="fa-solid fa-circle circle3"></i></span> FTP files</div>
+                <div class="px-4 py-2"><span><i class="fa-solid fa-circle circle4"></i></span>Transfer files</div>
+                <div class="px-4 py-2"><span><i class="fa-solid fa-circle circle5"></i></span>Deep clean</div>
+                <div class="px-4 py-2"><span><i class="fa-solid fa-circle circle6"></i></span>Favourities</div>
+                <div class="px-4 py-2"><span><i class="fa-solid fa-circle circle7"></i></span> Setting</div>
+             
+            </div>
+            <!--extra controls ends-->
+
+            </div>
+        </div><!--col-xl-3-->
+        <div class="col-xl-9"  id="upload"><!--col-xl-9-->
+           
+             <!--folder section-->
+             <div class="row m-1" id="folders">
+             <!--upload button section-->
+               <div class="col-xl-12 col-sm-12 upload-files mb-2  d-flex justify-content-start flex-wrap">
+                <div>
+                    <form method="post" class="m-1" id="uploadbtn" enctype="multipart/form-data">
+                        <label for="apply">
+                            <input type="file" name="" id="apply" accept="image/*,.pdf">
+                            Upload New Files
+                        </label>
+                    </form> 
+                </div>
+                <div class="m-1" id="newFolder">
+                  <button >New Folder</button>
+                </div>
+                  <div class="search mx-auto">
+                      <form class="form-inline d-flex flex-row m-1">
+                          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      </form>
+                  </div>
+              </div>
+      
+        
+         <!--upload button section **-->
+
+                <!--col1 -->
+                <div class="col-xl-4 d-flex justify-content-center">
+                    <div class="container">
+
+                        <div class="btn-group dropright" id="dropright">
+                        
+                            <button type="button " class="btn-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <ul>
+                                <li><a href=""><span><i class="fa fa-pencil" aria-hidden="true"></i></span> Rename</a></li>
+                                <li><a href=""><span><i class="fa fa-share" aria-hidden="true"></i></span>Share</a></li>
+                                <li><a href=""> <span><i class="fa fa-download" aria-hidden="true"></i></span> Download</a></li>
+                                <li><a href=""><span><i class="fa fa-trash" aria-hidden="true"></i></span> Delete</a></li>
+                                <li><a href=""><span><i class="fa fa-info-circle" aria-hidden="true"></i></span> More</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        <div class="d-flex flex-column align-items-center  file-cont" id="file-cont"> 
+                          <div>
+                              <img src="./assets/img/file-icon.png" width="80px" height="auto" alt="" class="mx-2">
+                          </div>
+                          <p>Document.pdf</p>  
+                        </div>
+                    </div>
+                 
+                </div>
+                <!--col 1 **-->
+
+                 <!--col 2-->
+                 <div class="col-xl-4  d-flex justify-content-center">
+                    <div class="container">
+                        <div class="btn-group dropright" id="dropright">
+                            <button type="button " class="btn-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <ul>
+                                <li><a href=""><span><i class="fa fa-pencil" aria-hidden="true"></i></span> Rename</a></li>
+                                <li><a href=""><span><i class="fa fa-share" aria-hidden="true"></i></span>Share</a></li>
+                                <li><a href=""> <span><i class="fa fa-download" aria-hidden="true"></i></span> Download</a></li>
+                                <li><a href=""><span><i class="fa fa-trash" aria-hidden="true"></i></span> Delete</a></li>
+                                <li><a href=""><span><i class="fa fa-info-circle" aria-hidden="true"></i></span> More</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                       <a href="image.html">
+                           <div class="d-flex flex-column align-items-center ">
+                           <img src="./assets/img/icons8-folder-48.png" width="80px" height="auto" alt="" class="mx-2">
+                           <p>Images</p>
+                           </div>
+                      </a>
+                    </div>
+                   </div>
+                 <!--col 2 **-->
+
+                 <!--col 3-->
+                 <div class="col-xl-4  d-flex justify-content-center">
+                    <div class="container">
+                   <div class="btn-group dropright" id="dropright">
+                        <button type="button " class="btn-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <ul>
+                            <li><a href=""><span><i class="fa fa-pencil" aria-hidden="true"></i></span> Rename</a></li>
+                            <li><a href=""><span><i class="fa fa-share" aria-hidden="true"></i></span>Share</a></li>
+                            <li><a href=""> <span><i class="fa fa-download" aria-hidden="true"></i></span> Download</a></li>
+                            <li><a href=""><span><i class="fa fa-trash" aria-hidden="true"></i></span> Delete</a></li>
+                            <li><a href=""><span><i class="fa fa-info-circle" aria-hidden="true"></i></span> More</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                      
+                    <div class="d-flex flex-column align-items-center ">
+                        <img src="./assets/img/icons8-folder-48.png" width="80px" height="auto" alt="" class="mx-2">
+                        <p>Videos</p>                        
+                    </div>
+                    </div>
+                </div>
+                 <!--col 3 **-->
+
+                   <!--col 4-->
+                <div class="col-xl-4  d-flex justify-content-center">
+                    <div class="container">
+
+                        <div class="btn-group dropright" id="dropright">
+                            <button type="button " class="btn-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <ul>
+                                <li><a href=""><span><i class="fa fa-pencil" aria-hidden="true"></i></span> Rename</a></li>
+                                <li><a href=""><span><i class="fa fa-share" aria-hidden="true"></i></span>Share</a></li>
+                                <li><a href=""> <span><i class="fa fa-download" aria-hidden="true"></i></span> Download</a></li>
+                                <li><a href=""><span><i class="fa fa-trash" aria-hidden="true"></i></span> Delete</a></li>
+                                <li><a href=""><span><i class="fa fa-info-circle" aria-hidden="true"></i></span> More</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        <div class="d-flex flex-column align-items-center  file-cont" id="file-cont"> 
+                          <div>
+                              <img src="./assets/img/file-icon.png" width="80px" height="auto" alt="" class="mx-2">
+                          </div>
+                          <p>Document.pdf</p>  
+                        </div>
+                    </div>
+                 
+                </div>
+                <!--col 4 **-->
+
+                 <!--col 5-->
+                 <div class="col-xl-4  d-flex justify-content-center">
+                    <div class="container">
+                         <div class="btn-group dropright" id="dropright">
+                            <button type="button " class="btn-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                            </button>
+                            <div class="dropdown-menu">
+                            <ul>
+                                <li><a href=""><span><i class="fa fa-pencil" aria-hidden="true"></i></span> Rename</a></li>
+                                <li><a href=""><span><i class="fa fa-share" aria-hidden="true"></i></span>Share</a></li>
+                                <li><a href=""> <span><i class="fa fa-download" aria-hidden="true"></i></span> Download</a></li>
+                                <li><a href=""><span><i class="fa fa-trash" aria-hidden="true"></i></span> Delete</a></li>
+                                <li><a href=""><span><i class="fa fa-info-circle" aria-hidden="true"></i></span> More</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                       <a href="image.html">
+                           <div class="d-flex flex-column align-items-center ">
+                           <img src="./assets/img/icons8-folder-48.png" width="80px" height="auto" alt="" class="mx-2">
+                           <p>Images</p>
+                           </div>
+                      </a>
+                    </div>
+                   </div>
+                 <!--col 5 **-->
+
+                 <!--col 6-->
+                 <div class="col-xl-4  d-flex justify-content-center">
+                    <div class="container">
+                        <div class="btn-group dropright" id="dropright">
+                            <button type="button " class="btn-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                            </button>
+                            <div class="dropdown-menu">
+                              <ul>
+                                <li><a href=""><span><i class="fa fa-pencil" aria-hidden="true"></i></span> Rename</a></li>
+                                <li><a href=""><span><i class="fa fa-share" aria-hidden="true"></i></span>Share</a></li>
+                                <li><a href=""> <span><i class="fa fa-download" aria-hidden="true"></i></span> Download</a></li>
+                                <li><a href=""><span><i class="fa fa-trash" aria-hidden="true"></i></span> Delete</a></li>
+                                <li><a href=""><span><i class="fa fa-info-circle" aria-hidden="true"></i></span> More</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                      
+                    <div class="d-flex flex-column align-items-center ">
+                        <img src="./assets/img/icons8-folder-48.png" width="80px" height="auto" alt="" class="mx-2">
+                        <p>Videos</p>                        
+                    </div>
+                    </div>
+                </div>
+                 <!--col 6 **-->
+
+
+               
+             </div>
+             <!--folder section **-->
+        </div><!--col-xl-9 end-->
+
+    </div><!--row end-->
+
+     
+                   
+
+
+    <!-- Optional JavaScript -->
+    
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha512-ldc1sPu1FZ8smgkgp+HwnYyVb1eRn2wEmKrDg1JqPEb02+Ei4kNzDIQ0Uwh0AJVLQFjJoWwG+764x70zy5Tv4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+     <script src="./assets/js/metisMenu.min.js"></script>
+
+    <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+    <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(".metisFolder").metisMenu({
+            toggle: false
+        })
+    </script>  
+ </body>
+</html>
